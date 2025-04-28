@@ -55,8 +55,8 @@ else
     # as they were opened at the 'Provisioning ports' step
     ynh_print_info "Closing DoH and DoQ ports..."
     # Hack Genma Both is incorrect, BOTH ->TCP
-    ynh_hide_warnings yunohost firewall disallow TCP "$port_dns_over_tls" --no-reload
-    ynh_hide_warnings yunohost firewall disallow UDP "$port_dns_over_quic"
+    #ynh_hide_warnings yunohost firewall disallow TCP "$port_dns_over_tls" --no-reload
+    #ynh_hide_warnings yunohost firewall disallow UDP "$port_dns_over_quic"
 fi
 
 #=================================================
